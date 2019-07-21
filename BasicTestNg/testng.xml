@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-   <test name="TestGroup">
-   <groups>
-   <run>
-   <include name = "functest"/>
-   </run>
-   </groups>
+<suite thread-count="2" parallel="test" name="Suite">
+  <tests>
+  <test name="Test">
     <classes>
-      <class name="test.Test1"/>
-      <class name="test.SampleTestClassOne"/>
+      <class name="howToDoInJava.testNg.ExceptionTestDemo"/>
+       <class name="howToDoInJava.testNg.MyFirstTest"/>
     </classes>
-</test>
-
-   <test name="Test">
+  </test> <!-- Test -->
+  <test name="Test2">
     <classes>
-      <class name="test.SampleTestClassOne2"/>
-      <class name="test.SampleTestClassOne"/>
+       <class name="howToDoInJava.testNg.DisableTestDemo"/>
     </classes>
-  </test> 
-
- <parameter name="first-name"  value="Cedric"/>
-   <!-- Test -->
+  </test>
+  </tests>
 </suite> <!-- Suite -->
+ 
