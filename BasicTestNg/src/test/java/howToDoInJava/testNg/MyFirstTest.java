@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * If @Test used at class level
  * all the public methods of a class will be considered as a test method
  * */
-@Test                                         
+@Test (enabled =false)                                         
 public class MyFirstTest {
 	
 	  public void f1() {
@@ -22,12 +22,13 @@ public class MyFirstTest {
 	    	System.out.println(" test CALLED f1");
 	    }
     
+	@Test  
     public void f2() {
     	System.out.println(" test CALLED f2");
-    	System.out.println(" test CALLED f2");System.out.println(" test CALLED f2");System.out.println(" test CALLED f2");System.out.println(" test CALLED f2");
-    }
+    	System.out.println(" test CALLED f2");
+    	}
     
-    @Test
+    
     public void f3() {
     	System.out.println(" test CALLED f3");
     	System.out.println(" test CALLED f3");

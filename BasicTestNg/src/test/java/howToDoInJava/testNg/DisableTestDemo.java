@@ -25,3 +25,9 @@ public class DisableTestDemo {
 	    }
 	}
 
+/*
+ *Note:- enabled =false means it wont read @Test annotation on particular method 
+ *
+ *At class level if any method contains @Test in that class it will get executed
+ * as it consider as normal class
+ **/

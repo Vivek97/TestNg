@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="test" name="Suite">
-  <tests>
-  <test name="Test">
+<suite  name="Suite" time-out="30" verbose="1">
+  <test thread-count="2" parallel="methods" name="Test">
     <classes>
-      <class name="howToDoInJava.testNg.ExceptionTestDemo"/>
-       <class name="howToDoInJava.testNg.MyFirstTest"/>
+      <class name="howToDoInJava.testNg.ExceptionTestDemo"/> 
+       <class name="howToDoInJava.testNg.MyFirstTest"/>   
+        <class name="howToDoInJava.testNg.DisableTestDemo"/>    
+        <class name="howToDoInJava.testNg.ParallelMethodTest"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test2">
-    <classes>
-       <class name="howToDoInJava.testNg.DisableTestDemo"/>
-    </classes>
-  </test>
-  </tests>
+  
 </suite> <!-- Suite -->
  
