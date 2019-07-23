@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="howToDoInJava.testNg.ExceptionTestDemo">
+      <class name="howToDoInJava.testNg.TimeoutMethod">
         <methods>
-          <include name="exceptionTest"/>
-          <include name="exceptionTestTwo"/>
+          <include name="timeTestOne"/>
         </methods>
-      </class> <!-- howToDoInJava.testNg.ExceptionTestDemo -->
+      </class> <!-- howToDoInJava.testNg.TimeoutMethod -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
